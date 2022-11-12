@@ -1,0 +1,23 @@
+#include <stdio.h>
+int maksimal(int a, int b){
+    if (a>b){; return a;}
+    else{ ; return b;}}
+int minimal(int a, int b){
+    if (a<b){; return a;}
+    else{ ; return b;}}
+	int main(){
+	    for(int i=0; i<=2; i++){
+	    int batas = 0;
+	    int maks = -100000;
+	    int minim = 100000;
+	    int bilangan;
+	    scanf("%d", &bilangan);
+	    while(batas < bilangan){
+	        int nilai;
+	        scanf("%d", &nilai);
+	        maks = maksimal(maks, nilai);
+	        minim = minimal(minim, nilai);
+	        batas++;
+	        }
+	    printf("%d %d",maks,minim);}
+}
